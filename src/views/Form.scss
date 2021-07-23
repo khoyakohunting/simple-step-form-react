@@ -1,0 +1,61 @@
+.custom__form {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	align-items: center;
+	.custom__form--item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 20px;
+		input {
+			padding: 10px 10px;
+		}
+		label {
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		&.custom__form--item--inline {
+			flex-direction: row;
+			label {
+				font-weight: 300;
+			}
+		}
+	}
+	.label {
+		text-align: left;
+		font-weight: bold;
+	}
+	button {
+		padding: 10px 10px;
+		// border: none;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+		cursor: pointer;
+	}
+	a {
+		padding: 10px 0px;
+		color: blue;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	.card {
+		padding: 20px;
+		// border: 1px solid #ccc;
+		min-height: 400px;
+		min-width: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&.card--shadow {
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+			border-radius: 10px;
+		}
+	}
+}
